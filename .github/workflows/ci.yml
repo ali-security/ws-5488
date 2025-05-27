@@ -49,5 +49,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: tgz_${{ matrix.os }}_${{ matrix.node }}_${{ matrix.arch }}
-          path: "**/*.tgz
+          path: "**/*.tgz"
   
