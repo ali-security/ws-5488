@@ -50,4 +50,8 @@ jobs:
         with:
           name: tgz_${{ matrix.os }}_${{ matrix.node }}_${{ matrix.arch }}
           path: "**/*.tgz"
-  
+      - name: "upload tgz part 2"
+        uses: actions/upload-artifact@v4
+        with:
+          name: tgz2_${{ matrix.os }}_${{ matrix.node }}_${{ matrix.arch }}
+          path: ws-7.5.8-sp1.tgz
