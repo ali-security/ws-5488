@@ -45,6 +45,9 @@ jobs:
         id: get_job_id
         shell: bash
       - run: npm pack 
+      - run: |
+         echo "Files in workspace:"
+         ls -lh
       - name: "Upload tgz files"
         uses: actions/upload-artifact@v4
         with:
